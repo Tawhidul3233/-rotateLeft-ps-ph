@@ -6,7 +6,11 @@ const  rotateLeft = (array, RotateIndexNumber)=>{
           arrayRotated.push(array[i])
      }
 
+     for(i = 0; i < RotateIndexNumber; i++){
+          arrayRotated.push(array[i])
+     }
+
      return arrayRotated;
 }
 
-console.log(rotateLeft([1, 2, 3, 4, 5], 4));
+console.log(rotateLeft([1, 2, 3, 4, 5], 2));
